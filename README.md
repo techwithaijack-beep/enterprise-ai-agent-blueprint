@@ -23,6 +23,7 @@ This blueprint packages those concerns into a practical artifact that can be reu
 - **Production-readiness checklist** across architecture, security, ops, and governance
 - **Non-functional requirements template** for solution scoping
 - **Pilot-to-production rollout plan** template
+- **Control-plane assessment scorecard** for workshops, readiness reviews, and advisory work
 - **Example policy pack** showing how approvals and tool constraints can be expressed
 
 ## Reference architecture
@@ -172,6 +173,7 @@ Quick preview:
 - `checklists/production-readiness.md` — go-live checklist
 - `templates/non-functional-requirements.md` — NFR template for discovery and design
 - `templates/pilot-to-production-plan.md` — phased rollout template
+- `templates/control-plane-assessment-scorecard.md` — 10-dimension readiness scorecard and workshop tool
 - `examples/policy-pack.yaml` — example approval and tool policy configuration
 
 ## How to use this repo
@@ -184,6 +186,9 @@ Reuse the design principles, layered architecture, and checklist as the backbone
 
 ### Option 3: Delivery baseline
 Fork the repo and adapt the templates for a real implementation team.
+
+### Option 4: Readiness assessment workshop
+Use the control-plane assessment scorecard to run a 60–90 minute session, identify the top 3 operating gaps, and define a 30/60/90-day improvement plan.
 
 ## Audience
 
