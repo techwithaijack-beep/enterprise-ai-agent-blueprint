@@ -1,0 +1,46 @@
+version: 1
+name: enterprise-agent-policy-pack
+
+models:
+  approved:
+    - id: gpt-4.1-mini
+      use_for: ["classification", "drafting", "tool-selection"]
+    - id: gpt-4.1
+      use_for: ["complex-reasoning", "high-value-responses"]
+  restricted_for_sensitive_data:
+    - public-preview-model
+
+actions:
+  approvals:
+    - action: send_external_email
+      requires: manager_approval
+    - action: send_whatsapp_message
+      requires: operator_approval
+    - action: update_crm_record
+      requires: owner_approval_if_confidence_below_0_85
+    - action: issue_refund
+      requires: finance_approval
+
+  tool_access:
+    sales_agent:
+      allow: ["crm_lookup", "knowledge_search", "draft_email"]
+      deny: ["issue_refund", "admin_export"]
+    support_agent:
+      allow: ["knowledge_search", "ticket_lookup", "draft_reply", "ocr_extract"]
+      deny: ["admin_export"]
+
+  budgets:
+    max_tokens_per_session: 25000
+    max_tool_calls_per_request: 8
+    max_external_actions_per_request: 1
+
+observability:
+  log_prompt_version: true
+  log_tool_inputs: true
+  log_tool_outputs: true
+  redact_fields: ["email", "phone", "national_id", "credit_card"]
+
+fallbacks:
+  on_model_timeout: use_search_only_response
+  on_retrieval_failure: ask_for_human_handoff
+  on_policy_violation: block_and_log
