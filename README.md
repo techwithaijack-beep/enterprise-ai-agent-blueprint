@@ -24,6 +24,7 @@ This blueprint packages those concerns into a practical artifact that can be reu
 - **Non-functional requirements template** for solution scoping
 - **Pilot-to-production rollout plan** template
 - **Control-plane assessment scorecard** for workshops, readiness reviews, and advisory work
+- **Workflow vs agent decision matrix** to choose the right autonomy pattern for a use case
 - **Example policy pack** showing how approvals and tool constraints can be expressed
 
 ## Reference architecture
@@ -174,6 +175,7 @@ Quick preview:
 - `templates/non-functional-requirements.md` — NFR template for discovery and design
 - `templates/pilot-to-production-plan.md` — phased rollout template
 - `templates/control-plane-assessment-scorecard.md` — 10-dimension readiness scorecard and workshop tool
+- `templates/workflow-vs-agent-decision-matrix.md` — decision tool for choosing workflow vs bounded-agent patterns
 - `offers/enterprise-ai-readiness-control-plane-review.md` — advisory offer package tied to the scorecard
 - `examples/policy-pack.yaml` — example approval and tool policy configuration
 
@@ -190,6 +192,9 @@ Fork the repo and adapt the templates for a real implementation team.
 
 ### Option 4: Readiness assessment workshop
 Use the control-plane assessment scorecard to run a 60–90 minute session, identify the top 3 operating gaps, and define a 30/60/90-day improvement plan.
+
+### Option 5: Workflow vs agent decision session
+Use the workflow-vs-agent decision matrix to determine whether a use case should be implemented as a deterministic workflow, a workflow with bounded intelligence, or a more agentic pattern.
 
 ## Audience
 
