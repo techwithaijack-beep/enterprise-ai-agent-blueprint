@@ -174,6 +174,7 @@ Quick preview:
 - `templates/non-functional-requirements.md` — NFR template for discovery and design
 - `templates/pilot-to-production-plan.md` — phased rollout template
 - `templates/control-plane-assessment-scorecard.md` — 10-dimension readiness scorecard and workshop tool
+- `offers/enterprise-ai-readiness-control-plane-review.md` — advisory offer package tied to the scorecard
 - `examples/policy-pack.yaml` — example approval and tool policy configuration
 
 ## How to use this repo

@@ -125,6 +125,9 @@ Use the scorecard to operationalize the idea.
 - AI platform owners
 - partners needing a stronger enterprise AI architecture narrative
 
+### Packaged asset
+See: `offers/enterprise-ai-readiness-control-plane-review.md`
+
 ---
 
 ## Publish status
