@@ -25,6 +25,7 @@ This blueprint packages those concerns into a practical artifact that can be reu
 - **Pilot-to-production rollout plan** template
 - **Control-plane assessment scorecard** for workshops, readiness reviews, and advisory work
 - **Workflow vs agent decision matrix** to choose the right autonomy pattern for a use case
+- **Enterprise AI evaluation operating model template** to define scenario coverage, release gates, telemetry, and review cadence
 - **Example policy pack** showing how approvals and tool constraints can be expressed
 
 ## Reference architecture
@@ -176,6 +177,7 @@ Quick preview:
 - `templates/pilot-to-production-plan.md` — phased rollout template
 - `templates/control-plane-assessment-scorecard.md` — 10-dimension readiness scorecard and workshop tool
 - `templates/workflow-vs-agent-decision-matrix.md` — decision tool for choosing workflow vs bounded-agent patterns
+- `templates/enterprise-ai-evaluation-operating-model.md` — evaluation template covering business outcomes, groundedness, tools, policy, operations, and release governance
 - `offers/enterprise-ai-readiness-control-plane-review.md` — advisory offer package tied to the scorecard
 - `examples/policy-pack.yaml` — example approval and tool policy configuration
 
@@ -195,6 +197,9 @@ Use the control-plane assessment scorecard to run a 60–90 minute session, iden
 
 ### Option 5: Workflow vs agent decision session
 Use the workflow-vs-agent decision matrix to determine whether a use case should be implemented as a deterministic workflow, a workflow with bounded intelligence, or a more agentic pattern.
+
+### Option 6: Evaluation operating model design
+Use the enterprise AI evaluation operating model template to define must-pass scenarios, golden sets, release gates, telemetry requirements, and ongoing review cadence before broad production rollout.
 
 ## Audience
 
