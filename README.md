@@ -26,6 +26,7 @@ This blueprint packages those concerns into a practical artifact that can be reu
 - **Control-plane assessment scorecard** for workshops, readiness reviews, and advisory work
 - **Workflow vs agent decision matrix** to choose the right autonomy pattern for a use case
 - **Enterprise AI evaluation operating model template** to define scenario coverage, release gates, telemetry, and review cadence
+- **Enterprise AI risk and approval matrix template** to define which AI actions can auto-execute, which require approval, and what evidence approvers should see
 - **Example policy pack** showing how approvals and tool constraints can be expressed
 
 ## Reference architecture
@@ -178,6 +179,7 @@ Quick preview:
 - `templates/control-plane-assessment-scorecard.md` — 10-dimension readiness scorecard and workshop tool
 - `templates/workflow-vs-agent-decision-matrix.md` — decision tool for choosing workflow vs bounded-agent patterns
 - `templates/enterprise-ai-evaluation-operating-model.md` — evaluation template covering business outcomes, groundedness, tools, policy, operations, and release governance
+- `templates/enterprise-ai-risk-and-approval-matrix.md` — approval-design template covering action classes, risk bands, approvers, evidence packets, escalation, and audit logging
 - `offers/enterprise-ai-readiness-control-plane-review.md` — advisory offer package tied to the scorecard
 - `examples/policy-pack.yaml` — example approval and tool policy configuration
 
@@ -200,6 +202,9 @@ Use the workflow-vs-agent decision matrix to determine whether a use case should
 
 ### Option 6: Evaluation operating model design
 Use the enterprise AI evaluation operating model template to define must-pass scenarios, golden sets, release gates, telemetry requirements, and ongoing review cadence before broad production rollout.
+
+### Option 7: Approval-design workshop
+Use the enterprise AI risk and approval matrix template to define which actions can auto-execute, which require approval, what evidence approvers need, and how escalation should work for high-impact workflows.
 
 ## Audience
 
